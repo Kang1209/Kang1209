@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header/>
-    <h1 class="text">我是展示路由组件</h1>
+    <router-view></router-view>
     <Footer/>
   </div>
 </template>
