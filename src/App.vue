@@ -1,20 +1,24 @@
 <template>
   <div>
-    <h1>我是App组件</h1>
+    <Header/>
+    <h1 class="text">我是展示路由组件</h1>
+    <Footer/>
   </div>
 </template>
 
 <script>
+import Header from './components/Header'
+import Footer from './components/Footer'
   export default {
-    name:'App'
+    name:'App',
+    components:{Footer,Header}
   }
 </script>
 
 <style lang="less" >
-  div{
-    background-color: aqua;
-    h1{
-         background-color: pink ;
-    }
+  .text{
+    height: 300px;
+    background-color: antiquewhite;
+    font-size: 50px;
   }
 </style>
